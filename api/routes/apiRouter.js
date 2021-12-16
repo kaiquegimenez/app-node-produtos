@@ -2,7 +2,7 @@ const express = require('express');
 let apiRouter = express.Router();
 
 const knex = require('knex') ({
-  client: 'pg',
+  client: 'postgresql',
   connection: process.env.DATABASE_URL
 });
 
